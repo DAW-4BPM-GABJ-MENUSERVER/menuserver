@@ -1,0 +1,38 @@
+/*este en un comentario en css*/
+/*gonzalez adame bryan josue*/
+/*DAW     14/03/2024*/
+/*a continuacion le aplicamos css a la acticidad 3(practica2.html) desde un archivo css(practica2.css)*/
+
+h1{
+    font-family: didot;
+    color: green;
+}
+h2{
+    font-family: optima;
+    color: maroon;
+}
+h6{
+    font-family: calibri;
+    color: blue;
+    text-align: right;
+}
+.coro{
+    text-align: left;
+    color: antiquewhite;
+}
+.uno{
+    text-align: center;
+    color: yellowgreen;
+}
+.dos{
+    text-align: right;
+    color: thistle;
+}
+.coro2{
+    text-align: left;
+    color: blue;
+}
+.coro3{
+    text-align: left;
+    color: violet;
+}
