@@ -1,0 +1,24 @@
+/*este en un comentario en css*/
+/*gonzalez adame bryan josue*/
+/*DAW     14/03/2024*/
+/*a continuacion le aplicamos css a la acticidad 11(practica10.html) desde un archivo css(practica10.css)*/
+
+h1{
+    font-family: minion;
+    color: blue;
+    font-size: 40px;
+}
+#tabla1{
+    background-color: white;
+    font-family: courier;
+    color: cornflowerblue;
+}
+img{
+    width: 100px;
+    height: 100px;
+}
+h6{
+    font-family: castellar;
+    color: white;
+    text-align: right;
+}

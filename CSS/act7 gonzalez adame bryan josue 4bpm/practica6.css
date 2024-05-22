@@ -1,0 +1,42 @@
+/*este en un comentario en css*/
+/*gonzalez adame bryan josue*/
+/*DAW     14/03/2024*/
+/*a continuacion le aplicamos css a la acticidad 7(practica6.html) desde un archivo css(practica6.css)*/
+
+img{
+    width: 300px;
+    height: 200px;
+    margin: auto;
+    display: block;
+}
+h1{
+    color: green;
+    font-family: didot;
+    text-align: center;
+}
+p{
+    color: red;
+    font-size: 19px;
+}
+#dos{
+    text-align: right;
+}
+h4{
+    text-align: right;
+    color: brown;
+}
+ul{
+    text-align: right;
+    list-style-position: inside;
+    color: chocolate;
+}
+embed{
+    float: left;
+}
+#horarios{
+    background-color: yellow;
+}
+h6{
+    text-align: right;
+    color: blue;
+}
