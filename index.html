@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circular Menu</title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+    <section class="titulo">
+        <span>P</span>
+        <span>R</span>
+        <span>O</span>
+        <span>Y</span>
+        <span>E <div class="div-letrabonita">Daw</div></span>
+        <span>C</span>
+        <span>T</span>
+        <span>O</span>
+    </section>
+    <section class="section2">
+        <div id="menu" onclick="toggleMenu(event)">
+            <span class="numero">1</span>
+            <div class="menuItem"><a href="ACTIVIDAD2 GONZALEZ ADAME BRYAN JOSUE 4BPM/practica1.html">Practica1 Html</a></div>
+            <div class="menuItem"><a href="ACTIVIDAD3 GONZALEZ ADAME BRYAN JOSUE 4BPM/Practica 2.HTML">Practica2 Html</a></div>
+            <div class="menuItem"><a href="ACTIVIDAD4 GONZALEZ ADAME BRYAN JOSUE 4BPM/practica3.HTML">Practica3 Html</a></div>
+            <div class="menuItem"><a href="ACTIVIDAD5 GONZALEZ ADAME BRYAN JOSUE 4BPM/Practica4.HTML">Practica4 Html</a></div>
+            <div class="menuItem"><a href="ACTIVIDAD6 GONZALEZ ADAME BRYAN JOSUE 4BPM/Practica 5.HTML">Practica5 Html</a></div>
+            <div class="menuItem"><a href="act7 gonzalez adame bryan josue 4bpm/practica6.HTML">Practica6 Html</a></div>
+            <div class="menuItem"><a href="act8 gonzalez adame bryan josue 4bpm/Practica7.HTML">Practica7 Html</a></div>
+            <div class="menuItem"><a href="act9_gonzalez_adame_bryan_josue4bpm/practica8.HTML">Practica8 Html</a></div>
+            <div class="menuItem"><a href="act10-gonzalez_adame_bryan_josue4bpm/practica9.HTML">Practica9 Html</a></div>
+            <div class="menuItem"><a href="act11gonzalezadamebryanjosue4bpm/practica10.html">Practica10 Html</a></div>
+        </div>
+        <div id="menu" onclick="toggleMenu(event)">
+            <span class="numero">2</span>
+            <div class="menuItem"><a href="HTML/ACTIVIDAD2 GONZALEZ ADAME BRYAN JOSUE 4BPM/practica1.html">Practica1 CSS</a></div>
+            <div class="menuItem"><a href="HTML/ACTIVIDAD3 GONZALEZ ADAME BRYAN JOSUE 4BPM/Practica 2.HTML">Practica2 CSS</a></div>
+            <div class="menuItem"><a href="HTML/ACTIVIDAD4 GONZALEZ ADAME BRYAN JOSUE 4BPM/practica3.HTML">Practica3 CSS</a></div>
+            <div class="menuItem"><a href="HTML/ACTIVIDAD5 GONZALEZ ADAME BRYAN JOSUE 4BPM/Practica4.HTML">Practica4 CSS</a></div>
+            <div class="menuItem"><a href="HTML/ACTIVIDAD6 GONZALEZ ADAME BRYAN JOSUE 4BPM/Practica 5.HTML">Practica5 CSS</a></div>
+            <div class="menuItem"><a href="HTML/act7 gonzalez adame bryan josue 4bpm/practica6.HTML">Practica6 CSS</a></div>
+            <div class="menuItem"><a href="HTML/act8 gonzalez adame bryan josue 4bpm/Practica7.HTML">Practica7 CSS</a></div>
+            <div class="menuItem"><a href="HTML/act9_gonzalez_adame_bryan_josue4bpm/practica8.HTML">Practica8 CSS</a></div>
+            <div class="menuItem"><a href="HTML/act10-gonzalez_adame_bryan_josue4bpm/practica9.HTML">Practica9 CSS</a></div>
+            <div class="menuItem"><a href="HTML/act11gonzalezadamebryanjosue4bpm/practica10.html">Practica10 CSS</a></div>
+        </div>
+        <div id="menu" onclick="toggleMenu(event)">
+            <span class="numero">3</span><br><br>
+            <div class="menuItem"><a href="">Ecologia</div>
+            <div class="menuItem"><a href="">Fisica</div>
+            <div class="menuItem"><a href="">Calculo Diferencial</div>
+            <div class="menuItem"><a href="">Ingles</div>
+            <div class="menuItem"><a href="MENUSERVE/proyecto tranversal/index.html">Dac y Das</a></div>
+            <div class="menuItem"><a href="MENUSERVE/cuestionario.html">Daw</div>
+        </div>
+
+    </section>
+    <script>
+        let menuOpen = false;
+
+        function toggleMenu(event) {
+            const menu = event.currentTarget;
+            const items = menu.querySelectorAll('.menuItem');
+
+            if (menuOpen) {
+                items.forEach((item, index) => {
+                    item.style.opacity = '0';
+                });
+            } else {
+                items.forEach((item, index) => {
+                    const angle = index * (Math.PI * 2) / items.length;
+                    const x = Math.cos(angle) * 30; // El 50% del tamaño del menú
+                    const y = Math.sin(angle) * 30;
+                    item.style.transform = `translate(calc(-50% + ${x}vmin), calc(-50% + ${y}vmin))`;
+                    item.style.opacity = '1';
+                });
+            }
+
+            menuOpen = !menuOpen;
+        }
+    </script>
+</body>
+
+</html>

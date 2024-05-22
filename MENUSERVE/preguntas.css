@@ -1,0 +1,21 @@
+p {
+    color: aquamarine;
+    font-family: comic sans ms;
+}
+
+ol {
+    font-family: courier;
+    color: blanchedalmond;
+}
+
+body {
+    background-color: rgb(14, 19, 24);
+}
+
+button{
+    margin: auto;
+    display: block;
+    background-color: brown;
+    color: yellowgreen;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
