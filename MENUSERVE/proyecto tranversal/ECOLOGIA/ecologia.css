@@ -1,0 +1,128 @@
+.section1{
+    text-align: center;
+    padding: 20px;
+    font-size: 35px;
+    background-color: green;
+    color: white;
+}
+.section1 h2{
+    font-size: 20px;
+}
+/*2 seccion*/
+.section2{
+  margin: 100px;
+  overflow: hidden;
+}
+
+
+content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+    
+}
+.section-list{
+    width: 40%;
+    float: right;
+    margin: -450px;
+    margin-right: 10px;
+}
+.list-cont{
+    margin-top: 20px;
+}
+.list-cont ul{
+    list-style-position: inside;
+}
+li{
+    font-size: 23px;
+}
+.text1 {
+    width: 45%;
+}
+.p1{
+   
+    font-size: 20spx;
+    text-align: left;
+
+}
+
+.imagen
+,img{
+    flex: 1;
+    margin-right: 20px;
+}
+.img{
+    width: 300px;
+    height: 300px;
+    margin-bottom: 30px;
+    border-radius: 50%;
+  
+}
+
+.link{
+    text-align: center;
+    position: relative;
+}
+/*3 seccion*/
+.section3{
+   width: 100%;
+   padding: 60px;
+   overflow: scroll;
+   background-color: rgb(117, 99, 99);
+   
+
+}
+.imagen-content{
+    display: flex;
+            justify-content: space-evenly;
+            padding: 25px;
+            height: 60%;
+            border-radius: 5px 5px 5px 5px;
+
+            }
+.imagen{
+   
+    margin-bottom: 30px;
+    width: 300px;
+    height: 300px;
+    margin: 0 10px;
+    margin-left: 50px;
+    border-radius: 10px 10px 10px 10px;
+    
+
+}
+.text{
+    font-size: 14px;
+    text-align: center;
+    
+}
+/*4 seccion*/
+.section4{
+    margin: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+
+}
+
+.text{
+    width: 30%;
+    text-align: center;
+
+}
+.text p{
+    margin: 0;
+
+}
+/*5 seccion*/
+.section5{
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(85, 126, 85);
+
+}
+.pie{
+    display: flex;
+    justify-content: space-around;
+}
